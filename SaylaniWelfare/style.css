@@ -95,15 +95,18 @@ body{
 /* header starts here */
 
 .head{
-    padding: 5px 150px;
+    padding: 5px 60px;
 }
-ul.nav li:first-child a{
+.logo{
+    padding: 0px 30px 0px 0px;
+}
+.active{
     display: inline-block;
     background-color: #0066cc;
     color: white;
     border-radius: 20px;
 }
-ul.nav li a{
+ul.navbar-nav li a{
     display: inline-block;
     padding: 10px 11px;
     font-size: 0.8em;
@@ -111,13 +114,23 @@ ul.nav li a{
     font-family: OpenSans-Regular;
 }
 
-.nav li a:hover{
+.navbar-nav li a:hover{
     display: inline-block;
     text-decoration: none;
     background-color: #0066cc;
     border-radius: 20px;
     color: white !important;
     cursor: pointer; 
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown{
+    display: inline-block;
+}
+.right{
+    float: right !important;
+    padding-right: 5px;
 }
 /* NEWS SLIDER */
 
